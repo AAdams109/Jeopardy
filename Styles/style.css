@@ -99,17 +99,16 @@ th{
     color: orange;
     font-weight: bold;
     position: relative;
-    opacity: 0;
    
 
 }
-
-
+/*
 #answer:hover{
     opacity: 1;
     transition: 2s;
     cursor: pointer;
 }
+*/
 
 
 #buttons{
@@ -189,6 +188,8 @@ th{
     transition: 0.7s;
 }
 
+/*
 #right:active{
     background-color: #000;
 }
+*/

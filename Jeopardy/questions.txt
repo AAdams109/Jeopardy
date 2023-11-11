@@ -1,0 +1,2 @@
+Geography;200;What is the biggest country in the world?;China;Russia;India;Austrailia;Russia
+Biology;200;What is the natural compound present in green plants that gives them their colour?;1;2;3;4;Chlorophyll
