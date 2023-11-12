@@ -19,10 +19,18 @@
             
         ?>
 
-        <div class="header">
-            <img src="logo.png" alt="logo">
+        <div id="header">
+            <nav>
+                <h2 id="user-name">Name</h2>
+                <ul>
+                    <li><a href="leaderboard.html">Leaderboard</a> </li>
+                </ul>
+                <form action="login.html" id="log-out-form">
+                    <button type="submit" id="log-out">Log Out</button>
+                </form>
+            </nav>
         </div>
-        <table>
+        <table id="jeopardy-table">
             <tr class="Category">
                 <td>Geography</td>
                 <td>Biology</td>
@@ -80,7 +88,7 @@
         <div class="footer">
             <ul>
                 <li>Name</li>
-                <li>Score: <?php echo $score; ?></li>
+                <li>Score:</li>
             </ul>
         </div>
     </body>
