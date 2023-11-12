@@ -1,7 +1,8 @@
+<!--***DO NOT MODIFY THIS FILE*** -->
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Jeopardy</title>
         <link rel="stylesheet" href="../Styles/style.css">
     </head>
     <body>

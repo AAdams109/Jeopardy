@@ -1,7 +1,9 @@
+<!--+++ Use this file for page connection & data processing +++-->
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="../Styles/style.css">
+        <title>Jeopardy</title>
     </head>
     <body>
         <?php

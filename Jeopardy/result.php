@@ -1,7 +1,8 @@
+<!--+++ Use this file for page connection & data processing +++-->
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Jeopardy</title>
         <link rel="stylesheet" href="../Styles/style.css">
     </head>
     <body>
@@ -13,35 +14,29 @@
             $point = $_POST['point'] ?? '';
             $c_a = trim($correct_answer);
             $s_a = trim($selected_answer);
-
-            print "log:";
-            echo $_SESSION['score'];
-            echo $_SESSION['attempt'];
-            echo $point;
-            print "<br><br><br>";
-            print "Your Answer<br>$s_a<br><br>";
-            if($c_a == $s_a){
-                print "CORRECT";
-                $_SESSION['score'] += $point;
-                $_SESSION['attempt'] += 1;
-            }else{
-                print "INCORRECT";
-                $_SESSION['attempt'] += 1;
-            }
-            
-        ?>
-        <div id="container">
-            <div id="result">
-                <?php 
-
-                     
-                ?>
-            </div>
+            ?>
+            <div id="container">
+                <div id="result">
+                    <!--Please add css styling here!-->
+                    <?php 
+                        echo $point;
+                        print "<br><br><br>";
+                        print "Your Answer<br>$s_a<br><br>";
+                        if($c_a == $s_a){
+                            print "CORRECT";
+                            $_SESSION['score'] += $point;
+                            $_SESSION['attempt'] += 1;
+                        }else{
+                            print "INCORRECT";
+                            $_SESSION['attempt'] += 1;
+                        }
+                    ?>
+                </div>
             </div>
 
-            <div>
-                <a href="./jeopardy.php">Return</a>
-            </div>
+                <div>
+                    <a href="./jeopardy.php">Return</a>
+                </div>
         </div>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
-    //include ("./question.php");
-
+    //***DO NOT MODIFY THIS FILE***
+    
     //get contents from questions.txt
     $questionPool = file_get_contents("./questions.txt");
     //separate each question that is separated by \n and save them in array
