@@ -88,7 +88,7 @@
         <div class="footer">
             <ul>
                 <li>Name</li>
-                <li>Score:</li>
+                <li>Score: <?= $score?></li>
             </ul>
         </div>
     </body>
