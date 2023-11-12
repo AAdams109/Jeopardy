@@ -7,8 +7,15 @@
         <?php
             include ("./q_query.php");
             session_start();
-            //Player name here
-            //$player = ...
+            global $score;
+            $score = $_SESSION['score'];
+            // Initialize score if it doesn't exist
+            if (!isset($_SESSION['score'])) {
+                $_SESSION['score'] = 0;
+            }
+            if (!isset($_SESSION['attempt'])) {
+                $_SESSION['attempt'] = 0;
+            }
             
         ?>
 
@@ -73,7 +80,7 @@
         <div class="footer">
             <ul>
                 <li>Name</li>
-                <li>Score:</li>
+                <li>Score: <?php echo $score; ?></li>
             </ul>
         </div>
     </body>

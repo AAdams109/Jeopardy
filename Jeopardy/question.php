@@ -6,6 +6,7 @@
     </head>
     <body>
         <?php
+            global $category, $point, $question, $c_1, $c_2, $c_3, $c_4, $c_a;
             // Assign variables for displaying question page components
             $category = $_GET['category'] ?? '';
             $point = $_GET['point'] ?? '';
@@ -24,18 +25,22 @@
                 <h1><?php echo $question; ?></h1>
             </div>
             <div id="answer">
-                <form method="post" action="./question.php">
-                    <input type="radio" id="c1" name="choices" value="<?php echo $c_1; ?>">
+                <form method="post" action="./result.php">
+                    <input type="radio" id="c1" name="choices" value="<?= $c_1; ?>">
                     <label for="c1"><?php echo $c_1 ?></label><br><br><br>
                     
-                    <input type="radio" id="c2" name="choices" value="<?php echo $c_2; ?>">
+                    <input type="radio" id="c2" name="choices" value="<?= $c_2; ?>">
                     <label for="c2"><?php echo $c_2 ?></label><br><br><br>
                     
-                    <input type="radio" id="c3" name="choices" value="<?php echo $c_3; ?>">
+                    <input type="radio" id="c3" name="choices" value="<?= $c_3; ?>">
                     <label for="c3"><?php echo $c_3 ?></label><br><br><br>
 
-                    <input type="radio" id="c4" name="choices" value="<?php echo $c_4; ?>">
+                    <input type="radio" id="c4" name="choices" value="<?= $c_4; ?>">
                     <label for="c4"><?php echo $c_4 ?></label><br><br><br>
+
+                    <input type="hidden" name="correct_answer" value="<?= $c_a; ?>">
+
+                    <input type="hidden" name="point" value="<?= $point; ?>">
 
                     <input type="submit" name="submit" value="Submit">
                     
