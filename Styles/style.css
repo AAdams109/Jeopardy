@@ -1,5 +1,9 @@
 /*Jeopardy Page */
 
+body{
+    background-color: #060CE9;
+}
+
 #header{
     height: 100px;
     width: 100%;
@@ -63,6 +67,7 @@ nav ul li a:hover{
 
 #footer{
     font-size: 30px;
+    font-weight: bold;
     color: white;
     display: flex;
     flex-direction:row;
@@ -124,47 +129,12 @@ nav ul li a:hover{
     background-color:navy;
 }
 
-#money{
-    border: 2px solid black;
-    text-align: center;
-    font-size: 30px;
-    color: orange;
-}
-
-#question{
-    text-align: center;
-    font-size:30px;
-    color: orange;
-    padding-top: 100px;
-    position: relative;
-}
-
-#answer{
-    text-align: center;
-    font-size: 30px;
-    color: orange;
-    font-weight: bold;
-    position: relative;
-   
-
-}
-/*
-#answer:hover{
-    opacity: 1;
-    transition: 2s;
-    cursor: pointer;
-}
-*/
 
 
-#buttons{
-    text-align: center;
-    justify-content: center;
-    margin:auto;
-    padding: 20px;
-}
-
-#wrong{
+#restart{
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 88%;
     border: 2px solid black;
     border-radius: 20px;
     border-width: 2px;
@@ -175,116 +145,15 @@ nav ul li a:hover{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    align-items:;
+    text-decoration: none;
 }
 
-#wrong:hover{
-    background-color: navy;
-    transition: 0.7s;
+#restart:hover{
+   background-color: navy;
+   transition: 0.7s;
 }
 
-#wrong:active{
-    background-color: #000;
-}
-
-#right{
-    border: 2px solid black;
-    border-radius: 20px;
-    border-width: 2px;
-    width: 200px;
-    height: 40px;
-    background-color: #060CE9;
-    color: orange;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#right:hover{
-    background-color: navy;
-    transition: 0.7s;
-}
-
-#right:active{
-    background-color: #000;
-}
-
-#score{
-    font-size: 30px;
-    color: orange;
-    font-weight: bold;
-}
-
-#return{
-    margin-top: 300px;
-    margin-left: 85%;
-    border: 2px solid black;
-    border-radius: 20px;
-    border-width: 2px;
-    width: 200px;
-    height: 40px;
-    background-color: #060CE9;
-    color: orange;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#return:hover{
-    background-color: navy;
-    transition: 0.7s;
-}
-
-/*Leaderboard Page */
-
-#leaderboard{
-    border: 2px solid black;
-    border-style: solid;
-    border-collapse: collapse;
-    border-color: black;
-    border: 5pt;
-    width: 60%;
-    height: 550px;
-    text-align: center;
-    color:orange;
-    background-color: #060CE9;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#leaderboard caption{
-    font-size: 50px;
-    padding-bottom: 50px;
-}
-
-#leaderboard th,td{
-    border: 10px solid #000;
-    padding: 10px;
-    text-align: center;
-    font-size:50px;
-    font-weight: bold;
-}
-
-#return-board{
-    margin-top: 120px;
-    margin-left: 85%;
-    border: 2px solid black;
-    border-radius: 20px;
-    border-width: 2px;
-    width: 200px;
-    height: 40px;
-    background-color: #060CE9;
-    color: orange;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#return-board:hover{
-    background-color: navy;
-    transition: 0.7s;
-}
-
-#return-board:active{
-    background-color: #000;
+#restart:active{
+   background-color: #000;
 }
