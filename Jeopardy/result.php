@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Jeopardy</title>
-        <link rel="stylesheet" href="../Styles/style.css">
+        <link rel="stylesheet" href="../Styles/result-css.css">
     </head>
     <body>
         <?php
@@ -18,6 +18,10 @@
             <div id="container">
                 <div id="result">
                     <!--Please add css styling here!-->
+                    <p>Point</p> <br>
+                    <p>Your Answer </p> <br>
+                    <p>Correct!</p> <br>
+                    <p>Incorrect! </p>
                     <?php 
                         echo $point;
                         print "<br><br><br>";
@@ -35,7 +39,7 @@
             </div>
 
                 <div>
-                    <a href="./jeopardy.php">Return</a>
+                    <a id="return" href="./jeopardy.php">Return</a>
                 </div>
         </div>
     </body>
