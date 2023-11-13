@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Jeopardy</title>
-        <link rel="stylesheet" href="../Styles/style.css">
+        <link rel="stylesheet" href="../Styles/question-css.css">
     </head>
     <body>
         <?php
@@ -43,13 +43,13 @@
 
                     <input type="hidden" name="point" value="<?= $point; ?>">
 
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="submit" name="submit" value="Submit" id="submit-button">
                     
                 </form>
             </div>
 
             <div>
-                <a href="./jeopardy.php">Return</a>
+                <a id="return" href="./jeopardy.php">Return</a>
             </div>
         </div>
     </body>
