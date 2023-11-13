@@ -85,11 +85,15 @@
             </tr>
         </table>
 
-        <div class="footer">
+        <div id="footer">
             <ul>
-                <li>Name</li>
                 <li>Score: <?= $score?></li>
             </ul>
+        </div>
+        <div id="restart-button">
+            <form action="" method="">
+                <input type="submit" value="Restart" id="restart">
+            </form>
         </div>
     </body>
 </html>
