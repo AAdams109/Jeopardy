@@ -1,0 +1,93 @@
+body{
+    background-color: #060CE9;
+}
+
+#money{
+    border: 10px solid black;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}
+
+#question{
+    text-align: center;
+    font-size:30px;
+    color: orange;
+    padding-top: 100px;
+    position: relative;
+}
+
+#answer{
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+    position: relative;
+   
+
+}
+
+
+
+#buttons{
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+    padding: 20px;
+}
+
+
+
+
+#return-button{
+    display: flex;
+}
+
+#return{
+     margin-top: 20px;
+     margin-left: 85%;
+     border: 2px solid black;
+     border-radius: 20px;
+     border-width: 2px;
+     width: 200px;
+     height: 40px;
+     background-color: #060CE9;
+     color: orange;
+     font-size: 30px;
+     text-align: center;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+#return:hover{
+    background-color: navy;
+    transition: 0.7s;
+}
+
+#return:active{
+    background-color: #000;
+}
+
+#submit-button{
+    border: 2px solid black;
+    border-radius: 20px;
+    border-width: 2px;
+    width: 200px;
+    height: 40px;
+    background-color: #060CE9;
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#submit-button:hover{
+    background-color: navy;
+    transition: 0.7s;
+}
+
+#submit-button:active{
+    background-color: #000;
+}
