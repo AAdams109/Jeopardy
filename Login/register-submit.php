@@ -1,3 +1,9 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Buy Your Way to a Better Education!</title>
+		<link href="./.css" type="text/css" rel="stylesheet" />
+	</head>
 <?php
 /*Check user input submitted w register.php*/ 
 		if(isset($_POST["username"]) &&!empty($_POST["username"])) {
@@ -21,11 +27,15 @@
 		{
 			$userinput = $username.",".$passcode.",0\n";
 			file_put_contents('./userdata.txt', $userinput, FILE_APPEND);
-			echo "<h1> Welcome, " . $username . "</h1>";
-			echo "<p> You have been successfully registered! To play jeopardy, please <a href="login.html"> login. </a>";
 		} else {
 			header("Location: error.html");
 			exit();
 		}
 	}
 ?>
+	<body>
+			<h1> Welcome, <?php print $username ?> "</h1>;
+			<p> You have been successfully registered! To play jeopardy, please <a href="login.html"> login. </a></p>
+			<p> If you need a reminder, your password is <?php print $passcode?>, make sure you do not forget!</p>
+	</body>
+</html> 
