@@ -12,11 +12,11 @@
 				<form action="./register-submit.php" method="post" name="register">
                     <h1>Registration</h1>
                     <div class="inputbox">
-                        <input type="text" name="username" placeholder="username">
+                        <input type="text" name="username" placeholder="Username">
                         <label for="username"></label>                    
                     </div>
                     <div class="inputbox">
-                        <input type="passcode" placeholder="password" name="passcode">
+                        <input type="passcode" placeholder="Password" name="passcode">
                         <label for="passcode"></label>
                     </div>
                     <button type="submit" class="button" onclick="">Register</button>
