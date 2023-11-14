@@ -10,11 +10,13 @@
 			$username=$_POST["username"];
 		} else {
 			echo "Error, please make sure to fill in name.";
+			echo "Please <a href="register.php"> resubmit.</a>";
 		}
 		if(isset($_POST["passcode"]) &&!empty($_POST["passcode"])) {
 			$passcode=$_POST["passcode"];
 		} else {
 			echo "Error, please make sure to fill in password.";
+   			echo "Please <a href="register.php"> resubmit.</a>";
 		}
 		
 	$checkfile = file_get_contents('./userdata.txt');	
