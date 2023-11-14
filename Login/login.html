@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="../Styles/index-c.css">
-    <title>Jeopardy Login Sheet</title>
-<body>
-    <section>
-            <div class="container">
-                <form action="../Jeopardy/jeopardy.html">
-                    <h1>Login To Play Jeopardy!</h1>
-                    <div class="inputbox">
-                        <input type="text" required placeholder="Name">
-                        <label for="name"></label>                    
-                    </div>
-                    <div class="inputbox">
-                        <input type="password" required placeholder="Password">
-                        <label for="password"></label>
-                    </div>
-                    <button type="submit" class="button" onclick="">Log In</button>
-                    <div class="register">
-                        <p>Don't have an account? <a href="#">Register here</a></p>
-                    </div>
-                </form>
-            </div>
-    </section>
-</body>
-</head>
+<html>
+    <head>
+        <title></title>
+        <link href="../Styles/login-style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="box">
+            <form action="../Jeopardy/jeopardy.php">
+                <h2>Login To Play Jeopardy</h2>
+
+                <div id="input">
+                    <input type="text" required id="user">
+                    <label for="user">Username</label>
+                </div>
+                <div id="input">
+                    <input type="password" id="pass" required>
+                    <label for="pass">Password</label>
+                </div>
+                <input type="submit" value="Submit" id="submit">
+                <div id="register">
+                    <p>Don't have an account?<a href="#">Register here!</a></p>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
