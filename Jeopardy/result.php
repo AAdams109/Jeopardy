@@ -18,13 +18,11 @@
             <div id="container">
                 <div id="result">
                     <!--Please add css styling here!-->
-                    <p>Point</p> <br>
-                    <p>Your Answer </p> <br>
-                    <p>Correct!</p> <br>
-                    <p>Incorrect! </p>
+
                     <?php 
                         echo $point;
-                        print "<br><br><br>";
+                        print "<br><br>";
+                        print "Correct Answer<br>$c_a<br><br>";
                         print "Your Answer<br>$s_a<br><br>";
                         if($c_a == $s_a){
                             print "CORRECT";
