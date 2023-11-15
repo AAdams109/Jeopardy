@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Jeopardy Registration</title>
-		<link href="./style.css" type="text/css" rel="stylesheet" />
+		<link href="../Styles/register-style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
     <section>
