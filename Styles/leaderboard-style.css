@@ -19,7 +19,7 @@ body{
 }
 
 #leaderboard caption{
-    font-size: 50px;
+    font-size: 35px;
     padding-bottom: 50px;
     font-weight: bold;
 }
@@ -28,7 +28,7 @@ body{
     border: 10px solid #000;
     padding: 10px;
     text-align: center;
-    font-size:50px;
+    font-size:20px;
     font-weight: bold;
 }
 
