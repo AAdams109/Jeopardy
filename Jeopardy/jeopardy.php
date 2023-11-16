@@ -98,5 +98,15 @@
                 <li>Score: <?= $score?></li>
             </ul>
         </div>
+	<div id="restart-button">
+            <form method="post">
+                <input type="submit" value="Restart" name="restart" id="restart">
+            </form>
+			<?php
+			 if(isset($_POST['restart'])) {
+				require_once('restartGame.php');
+				newGame();
+			} ?>
+        </div>
     </body>
 </html>
