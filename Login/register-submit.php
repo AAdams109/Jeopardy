@@ -40,7 +40,7 @@
 ?>
 	<body>
 			<h1> Welcome, <?php print $username ?> </h1>;
-			<p> You have been successfully registered! To play jeopardy, please <a href="login.html"> login. </a></p>
+			<p> You have been successfully registered! To play jeopardy, please <a href="login.php"> login. </a></p>
 			<p> If you need a reminder, your password is <?php print $passcode?>, make sure you do not forget!</p>
 	</body>
 </html> 
