@@ -173,3 +173,10 @@ nav{
 #restart:active{
    background-color: #000;
 }
+
+#restart-button p{
+	font-size: 15px;
+    font-weight: bold;
+    color: white;
+	float:right;
+}
