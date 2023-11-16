@@ -31,6 +31,7 @@
 		{
 			$userinput = $username.",".$passcode.",0\n";
 			file_put_contents('./userdata.txt', $userinput, FILE_APPEND);
+			break;
 		} else {
 			header("Location: error.html");
 			exit();
