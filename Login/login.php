@@ -36,6 +36,11 @@ session_start();
 <body>
     <section>
             <div class="container">
+		<?php if(isset($error)){?>
+    		<div class="register">
+      			<?php echo $error;?>
+    		</div>
+    		<?php } ?>
                 <form action="" method="post">
                     <h1>Login To Play Jeopardy!</h1>
                     <div class="inputbox">
