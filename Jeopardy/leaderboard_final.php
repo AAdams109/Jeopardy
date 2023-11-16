@@ -8,7 +8,7 @@
 <html>
     <head>
         <title>Leaderboard</title>
-        <link href="../Styles/leaderboard-style.css" rel="stylesheet">
+        <link href="../Styles/leaderboard_style.css" rel="stylesheet">
     </head>
     <body>
 	 <table id="leaderboard">
@@ -44,13 +44,15 @@
             <form method="post">
                 <input type="submit" value="New Game" name="restart" id="return-board">
             </form>
-           </div>
+		<p>Clear your browser history to make the questions visible.</p>
 		<?php
 			 if(isset($_POST['restart'])) { 
 				require_once('restartGame.php');
 				newGame();
 				
 			} ?>
+           </div>
+		
 		 
     </body>
 </html>
