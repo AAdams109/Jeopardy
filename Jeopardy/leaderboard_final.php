@@ -2,20 +2,6 @@
 	return $b['score'] - $a['score'];
 }
 
-function newGame(){	//sets each user's score to 0 in the text file
-	foreach(file(".././login/userdata.txt") as $line){	//get user data into array
-		$arr = explode(",",$line);
-		$initialStr = implode(",",$arr);	//saves inital user array
-		$arr[2] = 0;
-		$getNewStr = implode(",",$arr);	//saves array with new scores
-		$replaceStr = $getNewStr."\n";
-		$file_contents = file_get_contents(".././login/userdata.txt"); //obtains lines from txt file
-		$file_contents = str_replace($initialStr, $replaceStr, $file_contents);	//replace correct lines in txt file
-		file_put_contents(".././login/userdata.txt", $file_contents);
-	}
-	header('Location: jeopardy.php');	//redirect back to jeopardy board
-}
-
 
 ?>
 <!DOCTYPE html>
@@ -35,7 +21,7 @@ function newGame(){	//sets each user's score to 0 in the text file
 	  <?php
 		$userData = array();
 	   $i = 0;
-	   foreach(file(".././login/userdata.txt") as $line){
+	   foreach(file(".././Login/userdata.txt") as $line){
 			$arr = explode(",", $line);	//get each line of the text file and turn into array
 			$userData[$arr[0]] = array('name' => $arr[0], 'score' => $arr[2]);	//turn each line into associative array
 			usort($userData, "sortbyScore");	//sort from highest to lowest score
@@ -61,6 +47,7 @@ function newGame(){	//sets each user's score to 0 in the text file
            </div>
 		<?php
 			 if(isset($_POST['restart'])) { 
+				require_once('restartGame.php');
 				newGame();
 				
 			} ?>

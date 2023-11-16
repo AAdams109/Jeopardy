@@ -21,7 +21,7 @@
 	  <?php
 		$userData = array();
 	   $i = 0;
-	   foreach(file(".././login/userdata.txt") as $line){
+	   foreach(file(".././Login/userdata.txt") as $line){
 			$arr = explode(",", $line);	//get each line of the text file and turn into array
 			$userData[$arr[0]] = array('name' => $arr[0], 'score' => $arr[2]);	//turn each line into associative array
 			usort($userData, "sortbyScore");	//sort from highest to lowest score
