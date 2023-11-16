@@ -29,7 +29,7 @@
 		$checkUser = explode(",",$checkUser);
 		if($checkUser[0] != $username) 
 		{
-			$userinput = "<br>". $username.",".$passcode.",0\n";
+			$userinput = "\n". $username.",".$passcode.",0\n";
 			file_put_contents('./userdata.txt', $userinput, FILE_APPEND);
 			break;
 		} else {
