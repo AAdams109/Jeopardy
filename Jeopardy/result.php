@@ -17,8 +17,6 @@
             ?>
             <div id="container">
                 <div id="result">
-                    <!--Please add css styling here!-->
-
                     <?php 
                         echo $point;
                         print "<br><br>";

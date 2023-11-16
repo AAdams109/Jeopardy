@@ -6,8 +6,8 @@ Geography;1000;How many countries border Spain?;1;2;3;4;2
 Sports;200;What sport does Michael Jordan play?;Basketball;Baseball;Hockey;Football;Basketball
 Sports;400;Where will be the Olympic in 2024?;Italy;Berlin;Paris;New Delhi;Paris
 Sports;600;Which country won more FIFA World Cup titles than any other country?;Brazil;Argentina;Japan;Crotia;Brazil
-Sports;800;What's the national sport of Canada?;Soccer;Golf;Lacrosse;Tennis;Lacorosse
-Sports;1000;What number sets to the right of the number '20' on a standard dartboard?;1;5;10;20;20
+Sports;800;What's the national sport of Canada?;Soccer;Golf;Lacrosse;Tennis;Lacrosse
+Sports;1000;What number sets to the right of the number '20' on a standard dartboard?;1;5;10;25;1
 Animals;200;What animal is used to travel in deserts?;Elephant;Camel;Goat;Tiger;Camel
 Animals;400;What mammal has the most powerful bite?;Hippo;Rhino;Lion;Gorillas;Hippo
 Animals;600;What animal is known for eating Eucalyptus leaves?;Opossum;Kangaroo;Koala;Red Panda;Koala
@@ -18,7 +18,7 @@ Art;400;What boy's name is also the name of Michelangelo's most famous sculpture
 Art;600;The Metropolitan Museum of Art is in which American city?;Seattle;San Francisco;Boston;New York;New York
 Art;800;Pablo Picasso's work 'Guernica' was painted in which decade?;1930s;1940s;1950s;1960s;1930s
 Art;1000;Which artist painted 'Portrait of Adele Bolch Bauer'?;Gustav Klimt;Mark Rothko;Van Gogh;Chagall;Gustav Klimt
-Capitals;200;Which of these capital cities is in Asia?;Oslo;Seoul;London;Budapest;Lisbon;Seoul
+Capitals;200;Which of these capital cities is in Asia?;Oslo;Seoul;London;Budapest;Seoul
 Capitals;400;Dublin is the capital of which country?;Ireland;Germany;Turkey;Romania;Ireland
 Capitals;600;What is the capital of Bulgaria?;Sofia;Olympia;Nairobi;Helsinki;Sofia
 Capitals;800;Which island is the Hawaiian capital of Honolulu on?;Kauai;Maui;Oahu;Kaho'olawe;Oahu
