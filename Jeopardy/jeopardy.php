@@ -10,7 +10,6 @@
             include ("./q_query.php");
             session_start();
             global $score;
-            $score = $_SESSION['score'];
             //$_SESSION for recording score, attempt
             //***Please declare User ID here & display it on line #87***
             if (!isset($_SESSION['score'])) {
@@ -19,17 +18,24 @@
             if (!isset($_SESSION['attempt'])) {
                 $_SESSION['attempt'] = 0;
             }
+			if($_SESSION['attempt'] >= 2){
+				$_SESSION['score'] = 0;
+				$_SESSION['attempt'] = 0;
+				header('Location: leaderboard_final.php');
+			}
+			
+			$score = $_SESSION['score'];
 
             //***If attempt exceed 30 (total # of tiles), lead player to leaderboard 
         ?>
 
         <div id="header">
             <nav>
-                <h2 id="user-name"> <?php print $_SESSION['Username'] ?> </h2>
+                <h2 id="user-name"> <?= $_SESSION['Username']; ?> </h2>
                 <ul>
-                    <li><a href="leaderboard.html">Leaderboard</a> </li>
+                    <li><a href="leaderboard.php">Leaderboard</a> </li>
                 </ul>
-                <form action="login.html" id="log-out-form">
+                <form action=".././Login/logout.php" id="log-out-form">
                     <button type="submit" id="log-out">Log Out</button>
                 </form>
             </nav>
@@ -89,11 +95,6 @@
             <ul>
                 <li>Score: <?= $score?></li>
             </ul>
-        </div>
-        <div id="restart-button">
-            <form action="" method="">
-                <input type="submit" value="Restart" id="restart">
-            </form>
         </div>
     </body>
 </html>
