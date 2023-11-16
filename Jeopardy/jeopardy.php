@@ -18,7 +18,7 @@
             if (!isset($_SESSION['attempt'])) {
                 $_SESSION['attempt'] = 0;
             }
-			if($_SESSION['attempt'] >= 2){
+			if($_SESSION['attempt'] >= 30){
 				$_SESSION['score'] = 0;
 				$_SESSION['attempt'] = 0;
 				header('Location: leaderboard_final.php');
