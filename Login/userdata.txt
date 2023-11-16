@@ -1,2 +1,4 @@
 jeopardy10,cat,0
 thebest,password,0
+TEST2,123,0
+TEST,123,0

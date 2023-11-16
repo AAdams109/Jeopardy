@@ -16,7 +16,7 @@ if(!isset($_SESSION['Username']) && !isset($_SESSION['Password'])){
 			<h1> Nice to see you, <?php print $_SESSION['Username'] ?>! </h1>
 			<p> If you want to logout, you can <a href="./logout.php"> here</a></p>
 		<!--Hanim this link needs to be styled as a button -->
-			<a href="jeopardy.html" class = "button">PLAY JEOPARDY</a>
+			<a href="../Jeopardy/jeopardy.php" class = "button">PLAY JEOPARDY</a>
 			
 				<?php echo $_SESSION["Username"] ?>
 				<?php echo $_SESSION["Password"] ?>
