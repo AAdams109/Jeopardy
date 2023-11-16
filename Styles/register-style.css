@@ -10,9 +10,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #060CE9;;
+    background-image: url(../Resources/jeopardy_blue.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .container{
@@ -23,6 +24,7 @@ body{
     border-radius: 10px;
     padding: 30px 40px;
     color: #fff;
+    background-color:#252cf0;
 }
 
 .container h1{
