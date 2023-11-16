@@ -7,12 +7,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Leaderboard</title>
+        <title>Final Results</title>
         <link href="../Styles/leaderboard_style.css" rel="stylesheet">
     </head>
     <body>
 	 <table id="leaderboard">
-           <caption>Leaderboard</caption>
+           <caption>Final Results</caption>
           <tr>
             <th>Name</th>
             <th>Winnings</th>
