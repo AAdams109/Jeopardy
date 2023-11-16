@@ -25,7 +25,7 @@
 
         <div id="header">
             <nav>
-                <h2 id="user-name">Name</h2>
+                <h2 id="user-name"> <?php print $_SESSION['Username'] ?> </h2>
                 <ul>
                     <li><a href="leaderboard.html">Leaderboard</a> </li>
                 </ul>
