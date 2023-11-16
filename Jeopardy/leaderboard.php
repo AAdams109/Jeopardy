@@ -8,7 +8,7 @@
 <html>
     <head>
         <title>Leaderboard</title>
-        <link href="../Styles/leaderboard-style.css" rel="stylesheet">
+        <link href="../Styles/leaderboard_style.css" rel="stylesheet">
     </head>
     <body>
 	 <table id="leaderboard">
