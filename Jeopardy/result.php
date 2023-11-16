@@ -1,7 +1,7 @@
 <!--+++ Use this file for page connection & data processing +++-->
 <?php 
 session_start();
-foreach(file(".././login/userdata.txt") as $line){	//get user data into array
+foreach(file(".././Login/userdata.txt") as $line){	//get user data into array
 	$arr = explode(",",$line);
 	if($arr[0] == $_SESSION['Username']){	//gets the name of the user and stores it
 		break;
@@ -13,9 +13,9 @@ function updateScore($arr, $score){
 	$arr[2] = $score;	//sets new score
 	$getNewStr = implode(",",$arr);	
 	$replaceStr = $getNewStr;
-	$file_contents = file_get_contents(".././login/userdata.txt");	//obtains lines from txt file
+	$file_contents = file_get_contents(".././Login/userdata.txt");	//obtains lines from txt file
 	$file_contents = str_replace($initialStr, $replaceStr, $file_contents);	//replace correct lines in txt file
-	file_put_contents(".././login/userdata.txt", $file_contents);
+	file_put_contents(".././Login/userdata.txt", $file_contents);
 	
 } ?>
 
