@@ -26,7 +26,7 @@
 	
 	foreach($users as $checkUser)
 	{
-		$checkUser = explode(",",$users);
+		$checkUser = explode(",",$checkUser);
 		if($checkUser[0] != $username) 
 		{
 			$userinput = $username.",".$passcode.",0\n";
