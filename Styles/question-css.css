@@ -1,19 +1,40 @@
-body{
-    background-color: #060CE9;
+*{
+    font-family: sans-serif;
 }
 
-#money{
-    border: 10px solid black;
+body{
+    background-image: url(../Resources/jeopardy_blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    width:80%;
+    margin:auto;
+    margin-top:30px;
+}
+
+#q_a{
+    background-color:#252cf0;
+    padding:30px;
+    margin-bottom:25px;
+}
+
+#point{
+    background-color: #000470;
+    border-radius:40px;
     text-align: center;
     font-size: 30px;
+    margin:auto;
+    margin-bottom:50px;
     color: orange;
+    width: 30%;
 }
 
 #question{
     text-align: center;
     font-size:30px;
-    color: orange;
-    padding-top: 100px;
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -36,21 +57,11 @@ body{
     padding: 20px;
 }
 
-
-
-
-#return-button{
-    display: flex;
-}
-
 #return{
-     margin-top: 20px;
-     margin-left: 85%;
-     border: 2px solid black;
+     margin-left: 90%;
+     border: 2px solid rgb(13, 36, 78);
      border-radius: 20px;
-     border-width: 2px;
-     width: 200px;
-     height: 40px;
+     padding: 10px 20px;
      background-color: #060CE9;
      color: orange;
      font-size: 30px;
@@ -60,8 +71,11 @@ body{
 }
 
 #return:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+    color: yellow;
     background-color: navy;
-    transition: 0.7s;
 }
 
 #return:active{
@@ -84,8 +98,11 @@ body{
 }
 
 #submit-button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+    color: yellow;
     background-color: navy;
-    transition: 0.7s;
 }
 
 #submit-button:active{

@@ -19,35 +19,36 @@
             $c_a = $_GET['ca'] ?? '';
         ?>
         <div id="container">
-            <div id="money">
+            <div id="point">
                 <h1><?php echo $point; ?></h1>
             </div>
-            <div id="question">
-                <h1><?php echo $question; ?></h1>
+            <div id="q_a">
+                <div id="question">
+                    <h1><?php echo $question; ?></h1>
+                </div>
+                <div id="answer">
+                    <form method="post" action="./result.php">
+                        <input type="radio" id="c1" name="choices" value="<?= $c_1; ?>">
+                        <label for="c1"><?php echo $c_1 ?></label><br><br><br>
+                        
+                        <input type="radio" id="c2" name="choices" value="<?= $c_2; ?>">
+                        <label for="c2"><?php echo $c_2 ?></label><br><br><br>
+                        
+                        <input type="radio" id="c3" name="choices" value="<?= $c_3; ?>">
+                        <label for="c3"><?php echo $c_3 ?></label><br><br><br>
+
+                        <input type="radio" id="c4" name="choices" value="<?= $c_4; ?>">
+                        <label for="c4"><?php echo $c_4 ?></label><br><br><br>
+
+                        <input type="hidden" name="correct_answer" value="<?= $c_a; ?>">
+
+                        <input type="hidden" name="point" value="<?= $point; ?>">
+
+                        <input type="submit" name="submit" value="Submit" id="submit-button">
+                        
+                    </form>
             </div>
-            <div id="answer">
-                <form method="post" action="./result.php">
-                    <input type="radio" id="c1" name="choices" value="<?= $c_1; ?>">
-                    <label for="c1"><?php echo $c_1 ?></label><br><br><br>
-                    
-                    <input type="radio" id="c2" name="choices" value="<?= $c_2; ?>">
-                    <label for="c2"><?php echo $c_2 ?></label><br><br><br>
-                    
-                    <input type="radio" id="c3" name="choices" value="<?= $c_3; ?>">
-                    <label for="c3"><?php echo $c_3 ?></label><br><br><br>
-
-                    <input type="radio" id="c4" name="choices" value="<?= $c_4; ?>">
-                    <label for="c4"><?php echo $c_4 ?></label><br><br><br>
-
-                    <input type="hidden" name="correct_answer" value="<?= $c_a; ?>">
-
-                    <input type="hidden" name="point" value="<?= $point; ?>">
-
-                    <input type="submit" name="submit" value="Submit" id="submit-button">
-                    
-                </form>
             </div>
-
             <div>
                 <a id="return" href="./jeopardy.php">Return</a>
             </div>

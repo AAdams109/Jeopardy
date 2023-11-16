@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../Styles/style.css">
+        <link rel="stylesheet" href="../styles/style.css">
         <title>Jeopardy</title>
     </head>
     <body>
@@ -26,12 +26,15 @@
         <div id="header">
             <nav>
                 <h2 id="user-name"> <?php print $_SESSION['Username'] ?> </h2>
-                <ul>
-                    <li><a href="leaderboard.html">Leaderboard</a> </li>
-                </ul>
-                <form action="login.html" id="log-out-form">
-                    <button type="submit" id="log-out">Log Out</button>
-                </form>
+                <img id="jeopardy-logo" src="../Resources/jeopardy_logo.png" alt="alt">
+                <div class="leaderboard-logout">
+                    
+                    <a id="leaderboard" href="leaderboard.html">Leaderboard</a>
+                    
+                    <form action="login.html" id="log-out-form">
+                        <button type="submit" id="log-out">Log Out</button>
+                    </form>
+                </div>
             </nav>
         </div>
         <table id="jeopardy-table">
