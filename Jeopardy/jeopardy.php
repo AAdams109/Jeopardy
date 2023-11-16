@@ -10,7 +10,6 @@
             include ("./q_query.php");
             session_start();
             global $score;
-            $score = $_SESSION['score'];
             //$_SESSION for recording score, attempt
             //***Please declare User ID here & display it on line #87***
             if (!isset($_SESSION['score'])) {
@@ -19,22 +18,26 @@
             if (!isset($_SESSION['attempt'])) {
                 $_SESSION['attempt'] = 0;
             }
+			if($_SESSION['attempt'] >= 30){
+				$_SESSION['score'] = 0;
+				$_SESSION['attempt'] = 0;
+				header('Location: leaderboard_final.php');
+			}
+			
+			$score = $_SESSION['score'];
 
             //***If attempt exceed 30 (total # of tiles), lead player to leaderboard 
         ?>
 
         <div id="header">
             <nav>
-                <h2 id="user-name"> <?php print $_SESSION['Username'] ?> </h2>
-                <img id="jeopardy-logo" src="../Resources/jeopardy_logo.png" alt="alt">
-                <div class="leaderboard-logout">
-                    
-                    <a id="leaderboard" href="leaderboard.html">Leaderboard</a>
-                    
-                    <form action="login.html" id="log-out-form">
-                        <button type="submit" id="log-out">Log Out</button>
-                    </form>
-                </div>
+                <h2 id="user-name"> <?= $_SESSION['Username']; ?> </h2>
+                <ul>
+                    <li><a href="leaderboard.php">Leaderboard</a> </li>
+                </ul>
+                <form action=".././Login/logout.php" id="log-out-form">
+                    <button type="submit" id="log-out">Log Out</button>
+                </form>
             </nav>
         </div>
         <table id="jeopardy-table">
@@ -92,11 +95,6 @@
             <ul>
                 <li>Score: <?= $score?></li>
             </ul>
-        </div>
-        <div id="restart-button">
-            <form action="" method="">
-                <input type="submit" value="Restart" id="restart">
-            </form>
         </div>
     </body>
 </html>
