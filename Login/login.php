@@ -31,11 +31,11 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../Styles/index-c.css">
+    <link rel="stylesheet" href="../Styles/login-style.css">
     <title>Jeopardy Login Sheet</title>
 <body>
     <section>
-            <div class="container">
+            <div id="box">
 		<?php if(isset($error)){?>
     		<div class="register">
       			<?php echo $error;?>
@@ -43,16 +43,16 @@ session_start();
     		<?php } ?>
                 <form action="" method="post">
                     <h1>Login To Play Jeopardy!</h1>
-                    <div class="inputbox">
+                    <div id="input">
                         <input type="text"  placeholder="Username" name = "Username">
                         <label for="Username"></label>                    
                     </div>
-                    <div class="inputbox">
+                    <div id="input">
                         <input type="text"  placeholder="Password" name = "Password">
                         <label for="Password"></label>
                     </div>
-                    <input name="Login" type="submit" class="button" onclick=""> </button>
-                    <div class="register">
+                    <input name="Login" type="submit" id="submit" onclick=""> </button>
+                    <div id="register">
                         <p>Don't have an account? <a href="register.php">Register here</a></p>
                     </div>
                 </form>
