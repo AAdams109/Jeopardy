@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title></title>
-		<link href="./.css" type="text/css" rel="stylesheet" />
+		<link href="../Styles/register-submit-style.css" type="text/css" rel="stylesheet" />
 	</head>
 <?php
 /*Check user input submitted w register.php*/ 
@@ -39,8 +39,10 @@
 	}
 ?>
 	<body>
+		<div id="container">
 			<h1> Welcome, <?php print $username ?> </h1>;
 			<p> You have been successfully registered! To play jeopardy, please <a href="login.php"> login. </a></p>
 			<p> If you need a reminder, your password is <?php print $passcode?>, make sure you do not forget!</p>
+		</div>
 	</body>
 </html> 
