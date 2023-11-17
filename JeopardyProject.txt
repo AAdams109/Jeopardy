@@ -1,0 +1,4 @@
+o Leader’s Name 
+o Project Name o Description: A one-sentence summary of your project 
+o Please select a project from the TOPICS provided 
+o All team members (last and first names) and their respective project responsibilities.
