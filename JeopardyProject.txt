@@ -1,4 +1,7 @@
-o Leader’s Name 
-o Project Name o Description: A one-sentence summary of your project 
-o Please select a project from the TOPICS provided 
-o All team members (last and first names) and their respective project responsibilities.
+Team Leader: Anna Adams
+Our project is an interactive jeopardy game using HTML, PHP, and CSS.
+Anna Adams - Login & Powerpoint
+Olivia Bae - Jeopardy Algorithm & Powerpoint
+Nyasia Pratt - Leaderboard & Powerpoint
+Royce Lim - Leaderboard & Powerpoint
+Aldin Karabegovic - HTML & CSS Styling & Powerpoint
