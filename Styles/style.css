@@ -135,13 +135,7 @@ nav{
 }
 
 #value a:visited{
-    color:#060CE9;
-}
-
-#value a:hover, a:focus{
-    color: yellow;
-    display: block;
-    background-color:navy;
+    color:gray;
 }
 
 
