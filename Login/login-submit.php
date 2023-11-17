@@ -10,15 +10,20 @@ if(!isset($_SESSION['Username']) && !isset($_SESSION['Password'])){
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title></title>
-		<link href="./.css" type="text/css" rel="stylesheet" />
+		<link href="../Styles/login-submit-style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
+		<div id="container">
 			<h1> Nice to see you, <?php print $_SESSION['Username'] ?>! </h1>
 			<p> If you want to logout, you can <a href="./logout.php"> here</a></p>
 		<!--Hanim this link needs to be styled as a button -->
-			<a href=".././Jeopardy/jeopardy.php" class = "button">PLAY JEOPARDY</a>
+			<p>Play Jeopardy by clicking the logo!</p>
 			
 				<?php echo $_SESSION["Username"] ?>
-				<?php echo $_SESSION["Password"] ?>
+				<?php echo $_SESSION["Password"] ?> <br><br>
+				<div id="image">
+				<a href="../Jeopardy/jeopardy.php"> <img src="../Resources/Jeopardy_logo.png">
+				</div>
+		</div>
 	</body>
 </html> 
