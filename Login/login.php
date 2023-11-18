@@ -35,12 +35,12 @@ session_start();
     <title>Jeopardy Login Sheet</title>
 <body>
     <section>
+	<?php if(isset($error)){?>
+    	<div class="register">
+      		<?php echo $error;?>
+    	</div>
+    	<?php } ?>
             <div id="box">
-		<?php if(isset($error)){?>
-    		<div class="register">
-      			<?php echo $error;?>
-    		</div>
-    		<?php } ?>
                 <form action="" method="post">
                     <h1>Login To Play Jeopardy!</h1>
                     <div id="input">
